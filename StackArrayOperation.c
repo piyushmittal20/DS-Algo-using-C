@@ -50,6 +50,7 @@ int peek(struct stack *s, int i) {
     int arrIndex = s->top-i+1;
     if(arrIndex < 0) {
         printf("The invalid value entered \n");
+        return -1;
     } else
     {
         return s->arr[arrIndex];
